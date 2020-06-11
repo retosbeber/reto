@@ -1,0 +1,12 @@
+{
+  "COURSES": {
+    "TITLE": "Courses",
+    "DESCRIPTION": "All your courses, listed"
+  },
+  "COURSE": {
+    "LESSONS": "Lessons",
+    "ORDER": "Order",
+    "TITLE": "Title",
+    "BACK": "View all courses"
+  }
+}
