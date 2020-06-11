@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.1a1f07e5e246a1e8b7a1cab23213a03d.js"
+  "precache-manifest.4514fc2e64f696c8af6ef98c67afc8af.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "reto-beber"});
