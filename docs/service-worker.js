@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.198f236ab52d927fcec1040b586e4d64.js"
+  "precache-manifest.1a1f07e5e246a1e8b7a1cab23213a03d.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "learner-front"});
+workbox.core.setCacheNameDetails({prefix: "reto-beber"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
