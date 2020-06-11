@@ -61,6 +61,8 @@
 import VueMarkdown from 'vue-markdown';
 import VueSwing from 'vue-swing';
 
+const OFFSET = 0.5;
+
 function randomSort() {
   return 0.5 - Math.random();
 }
@@ -83,7 +85,19 @@ export default {
     },
   },
   data: () => ({
-    config: {},
+    config: {
+      allowedDirections: [
+        VueSwing.Direction.UP,
+        VueSwing.Direction.DOWN,
+        VueSwing.Direction.LEFT,
+        VueSwing.Direction.RIGHT,
+      ],
+      throwOutConfidence(xOffset, yOffset, element) {
+        const xConfidence = Math.min(Math.abs(xOffset) / (element.offsetWidth * OFFSET), 1);
+        const yConfidence = Math.min(Math.abs(yOffset) / (element.offsetHeight * OFFSET), 1);
+        return Math.max(xConfidence, yConfidence);
+      },
+    },
     cards: [],
   }),
   created() {
